@@ -11,9 +11,9 @@ async function displayMessage() {
 
   // Display message after the specified delay
   try {
-    outputDiv.textContent = '';
+    outputDiv.innerHTML = '';
     await new Promise(resolve => setTimeout(resolve, delay)); // Introduce delay
-    outputDiv.textContent = text;
+    outputDiv.innerHTML = text;
   } catch (error) {
     console.error('An error occurred:', error);
   }
